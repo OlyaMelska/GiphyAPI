@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giphy API</title>
+
+    <link rel="icon" type="image/jpeg" href="./Assets/Images/icon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  </head>
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-4">Giphy API</h1>
+      <div id="buttons"></div>
+    </header>
+    <div id="addActor">
+      <form id="addNewActor">
+        <label form="actor-input">Add a new actor</label>
+        <input type="text" id="actor-input" /><br />
+
+        <!-- Button triggers new movie to be added -->
+        <input id="submit" type="submit" class="btn btn-dark" />
+      </form>
+    </div>
+    <div id="result"></div>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script src="./Assets/JavaScript/java.js"></script>
+  </body>
+</html>
