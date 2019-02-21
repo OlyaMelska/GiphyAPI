@@ -9,7 +9,6 @@ let actors = [
 ];
 let displayBtn = $("#buttons");
 
-// Function for displaying movie data
 function renderButtons() {
   $("#buttons").empty();
   for (let i = 0; i < actors.length; i++) {
@@ -21,7 +20,6 @@ function renderButtons() {
   }
 }
 
-// This function handles events where one button is clicked
 $("#submit").on("click", function() {
   event.preventDefault();
   let newActor;
