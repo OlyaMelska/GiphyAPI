@@ -33,6 +33,7 @@ renderButtons();
 
 $(document).on("click", "button", function() {
   $("#result").html("");
+
   let actor = $(this).text();
   console.log("actor", actor);
   let queryURL =
@@ -45,6 +46,8 @@ $(document).on("click", "button", function() {
     method: "GET"
   }).then(function(response) {
     let results = response.data;
+    console.log(response);
+    $(".height").removeClass("height");
     for (let i = 0; i < results.length; i++) {
       let imgURL = results[i].images.fixed_width_still.url;
       let imgElement = $("<img>").attr("index", i);

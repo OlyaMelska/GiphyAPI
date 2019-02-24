@@ -30,10 +30,13 @@ footer {
 	width: 100%;
 	height: 200px;
 	text-align: center;
-	position: relative;
-	bottom: 0;
+	display: block;
+}
+
+.height {
+	height: 40vh;
 }
 
 #copyright {
-	margin-top: 90px;
+	padding-top: 90px;
 }
